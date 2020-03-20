@@ -14,11 +14,16 @@
         margin-top: 64px;
       }
       button {
-        width: 90px;
-        height: 60px;
+        width: 110px;
+        height: 80px;
+        display: block;
         border: none;
-        margin-bottom: 5px;
+        margin: 5px;
         background-color: #fff;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
       }
       p {
         font-size: 20px;
@@ -36,21 +41,21 @@
   </head>
   <body>
     <div class="container">
-      <p>the turn of the : <span id="player">X</span> player</p>
+      <p>the turn of player : <span id="player">X</span></p>
       <div class="row">
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
       <div class="row">
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
       <div class="row">
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
-        <button>&nbsp;</button>
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
       <p id="winner"></p>
       <button id="reset" class="reset" onclick="rejower()">Rejower</button>

@@ -30,11 +30,13 @@ for (let i = 0; i < btns.length; i++) {
 }
 // reset the game
 function rejower() {
+  const resetBtn = document.getElementById("reset");
+  resetBtn.style.display = "none";
   res.fill(null);
   for (let btn of btns) {
     isXnext = true;
     btn.style.backgroundColor = "white";
-    btn.textContent = ` `;
+    btn.textContent = "";
     winner.textContent = "";
   }
 }
