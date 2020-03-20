@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic toc Toe</title>
+    <style>
+      body {
+        background-color: rgb(49, 37, 59);
+        color: #fff;
+      }
+      .container {
+        text-align: center;
+        margin-top: 64px;
+      }
+      button {
+        width: 90px;
+        height: 60px;
+        border: none;
+        margin-bottom: 5px;
+        background-color: #fff;
+      }
+      p {
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      #winner,
+      #player {
+        font-family: cursive;
+      }
+      .reset {
+        display: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>the turn of the : <span id="player">X</span> player</p>
+      <div class="row">
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+      </div>
+      <div class="row">
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+      </div>
+      <div class="row">
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+        <button>&nbsp;</button>
+      </div>
+      <p id="winner"></p>
+      <button id="reset" class="reset" onclick="rejower()">Rejower</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
